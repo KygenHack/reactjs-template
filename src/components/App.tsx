@@ -16,6 +16,8 @@ import {
   Router,
   Routes,
 } from 'react-router-dom';
+import "../global.css";
+
 
 import { routes } from '@/navigation/routes.tsx';
 
@@ -51,7 +53,7 @@ export const App: FC = () => {
 
   return (
     <AppRoot
-      appearance={miniApp.isDark ? 'dark' : 'light'}
+      // appearance={miniApp.isDark ? 'dark' : 'light'}
       platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
     >
       <Router location={location} navigator={reactNavigator}>
